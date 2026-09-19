@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b16" />
+    <title>CODE CRUSADE — Under VYUGAM 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="landing-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow"><span></span> VYUGAM 2.0 PRESENTS</p>
+        <h1 id="page-title">CODE <em>CRUSADE</em></h1>
+        <p class="subtitle">Under <strong>VYUGAM 2.0</strong></p>
+        <p class="intro">Challenge your coding skills. Think. Debug. Solve. Conquer.</p>
+        <div class="topics" aria-label="Competition topics">CODING <b>•</b> DSA <b>•</b> DEBUGGING <b>•</b> OUTPUT PREDICTION <b>•</b> SQL</div>
+        <div class="duration"><span>⏱</span><div><small>COMPETITION WINDOW</small><strong>1 HOUR 30 MINUTES</strong></div></div>
+      </section>
+
+      <section class="registration-card" aria-labelledby="register-title">
+        <div class="card-top"><span class="terminal-dot"></span><span>PARTICIPANT ACCESS</span></div>
+        <h2 id="register-title">Enter the arena<span>.</span></h2>
+        <p class="card-copy">Your 90-minute challenge starts when you continue.</p>
+        <form id="registration-form" novalidate>
+          <label for="name">NAME</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="name" maxlength="100" required />
+          <label for="pass-number">PASS NUMBER</label>
+          <input id="pass-number" name="passNumber" type="text" placeholder="Enter your pass number" autocomplete="off" maxlength="50" required />
+          <p id="form-message" class="form-message" role="alert" aria-live="polite"></p>
+          <button id="start-button" type="submit"><span>START NOW</span><i>→</i></button>
+        </form>
+        <p class="privacy-note">Your session is saved securely in this browser.</p>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

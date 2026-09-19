@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b16" />
+    <title>Exam Dashboard — CODE CRUSADE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/exam.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="exam-header">
+        <a class="brand" href="index.html" aria-label="CODE CRUSADE home"><span>CODE</span> CRUSADE <small>VYUGAM 2.0</small></a>
+        <div class="timer-panel" id="timer-panel" aria-live="polite"><small>TIME REMAINING</small><strong id="countdown">--:--:--</strong></div>
+      </header>
+      <section class="welcome" aria-labelledby="welcome-title">
+        <p class="eyebrow">// COMPETITION DASHBOARD</p>
+        <h1 id="welcome-title">Ready, <span id="participant-name">participant</span>.</h1>
+        <p>Choose a section to begin. Your progress modules will appear here as they are unlocked.</p>
+      </section>
+      <section class="sections" aria-label="Exam sections">
+        <button class="section-card" data-section="Coding (DSA)"><span class="card-icon">&lt;/&gt;</span><span><strong>Coding (DSA)</strong><small>Solve algorithmic programming problems.</small></span><i>→</i></button>
+        <button class="section-card" data-section="Debugging + Fix the Code"><span class="card-icon">⌘</span><span><strong>Debugging + Fix the Code</strong><small>Find errors, understand the problem and fix the code.</small></span><i>→</i></button>
+        <button class="section-card" data-section="Output Prediction + MCQ"><span class="card-icon">?</span><span><strong>Output Prediction + MCQ</strong><small>Predict program outputs and answer programming MCQs.</small></span><i>→</i></button>
+        <button class="section-card" data-section="SQL"><span class="card-icon">▣</span><span><strong>SQL</strong><small>Test your database and SQL query skills.</small></span><i>→</i></button>
+      </section>
+      <p id="dashboard-message" class="dashboard-message" role="status" aria-live="polite"></p>
+    </main>
+    <div id="expired-overlay" class="expired-overlay" hidden><div><p class="eyebrow">SESSION COMPLETE</p><h2>Time's up.</h2><p>Your competition attempt has expired.</p><a href="index.html">Return home</a></div></div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/exam.js"></script>
+  </body>
+</html>
